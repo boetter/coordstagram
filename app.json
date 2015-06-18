@@ -14,9 +14,9 @@
     "postdeploy": "bundle exec rake db:migrate && bundle exec rake initial_backfill"
   },
   "addons": [
-    "scheduler:standard",
-    "memcachier:dev",
-    "heroku-postgresql:hobby-dev"
+    "scheduler",
+    "memcachier",
+    "heroku-postgresql"
   ],
   "env": {
     "LATITUDE": {
